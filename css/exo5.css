@@ -1,1 +1,87 @@
 @import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Allan&family=Noto+Sans+Symbols:wght@100..900&display=swap');
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Noto Sans Symbols';
+	background-color: hsla(223, 48%, 34%, 1);
+	width: 100vw;
+	height: 100vh;
+}
+
+
+
+h2 {
+	font-size: 36px;
+	font-weight: 300;
+}
+
+.card {
+    position:relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #fff;
+	box-shadow: 5px 20px 50px 0 hsla(0, 0%, 0%, 0.6);
+	width: 288px;
+	padding: 50px 50px 64px 50px;
+	border-radius: 27px;
+
+	& .features {
+		display: flex;
+		flex-direction: column;
+		text-transform: uppercase;
+		gap: 4px;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 2em;
+		width: 100%;
+		padding: 24px 0;
+		letter-spacing: 0.06em;
+
+		& .feature {
+			display: flex;
+			gap: 16px;
+		}
+	}
+
+	hr {
+		width: 100%;
+		height: 1px;
+        background: #000;
+	}
+}
+
+.price {
+    margin-top: 4px;
+	font-size: 36px;
+	font-weight: 700;
+	letter-spacing: 0.13em;
+}
+
+.time {
+	font-family: Allan;
+	font-weight: 400;
+	font-size: 36px;
+	color: hsla(223, 48%, 34%, 1);
+	align-self: flex-end;
+    line-height: 1.5em;
+}
+
+button {
+    position: absolute;
+    bottom:0;
+    /* left: 0; */
+    transform: translateY(50%);
+	color: hsla(223, 48%, 28%, 1);
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 34px;
+	line-height: 2em;
+	letter-spacing: 6%;
+    width: 181px;
+	padding: 18px;
+	background-color: hsla(43, 100%, 53%, 1);
+}
