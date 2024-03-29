@@ -1,0 +1,56 @@
+@import url(reset.css);
+
+body {
+	background-color: hsl(39, 6%, 83%);
+}
+
+h1 {
+	color: rgb(12, 37, 134);
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 24px;
+}
+
+h1 > span {
+	color: #d69e36;
+}
+
+a {
+	text-decoration: underline;
+}
+
+.menu > li {
+	list-style-type: disc;
+	margin-left: 36px;
+	& > a {
+		color: rgb(134, 12, 110);
+
+		& span {
+			color: red;
+		}
+	}
+}
+
+div[data-role='dropdown'] {
+	background-color: hsl(39, 21%, 73%);
+
+	& > ul li {
+		list-style-type: circle;
+		margin-left: 36px;
+
+		& span {
+			color: rgb(14, 86, 96);
+		}
+	}
+}
+
+.blabla + li {
+	background-color: purple;
+}
+
+.content {
+	color: darkcyan;
+	& a {
+		color: inherit;
+	}
+}
