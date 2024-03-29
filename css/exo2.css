@@ -1,1 +1,18 @@
 @import url(reset.css);
+
+html {
+	font-size: 30px;
+}
+
+.blabla {
+	background-color: pink;
+	min-height: 50vh;
+	max-height: 75vh;
+	overflow: hidden;
+}
+
+.i-am-the-boss {
+	background-color: cyan;
+	padding: 16px;
+	font-size: 1.2rem;
+}
